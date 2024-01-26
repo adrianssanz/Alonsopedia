@@ -1,0 +1,55 @@
+/*@font-face{
+    font-family:"formula1-display-regular";
+    src:url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("truetype");
+}*/
+
+*{
+    font-family: "formula1-display-regular", sans-serif;
+    margin: 0;
+}
+
+.cabecera{
+    background-color: #0066ff;
+    display: flex;
+}
+
+.titulo{
+    width: 100%;
+    text-align: left;
+    font-size: 100%;
+    color: #f7d510;
+    padding: 3rem;
+    padding-left: 5%;
+    margin: 5px;
+}
+
+.subtitulo{
+    color: white;
+}
+
+.logo{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenLogo{
+    width: auto;
+}
+
+.navegacion{
+    display: flex;
+    background-color: #212121;
+    padding-left: 3rem;
+    
+}
+
+.contenido{
+    padding: 1rem;
+    height: 100%; 
+}
+
+
