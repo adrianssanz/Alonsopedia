@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import "../Estilos/Boton.css";
-import { ListaCarreras } from './ListaCarreras';
 import ReactDOM from 'react-dom';
 
 
@@ -21,10 +20,10 @@ function Boton({ valor, componenteAEjecutar, divId }) {
               {valor}
             </div>
             {ejecutarComponente && 
-              ReactDOM.createPortal(<ListaCarreras />, document.getElementById("contenido"))
+              ReactDOM.createPortal(componenteAEjecutar, document.getElementById(divId))
             }
         </div>
     );
   }
 
-export default Boton;
+export default Boton;
