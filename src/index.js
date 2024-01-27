@@ -2,11 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ListaCarreras } from './Componentes/ListaCarreras';
+import Layout from './Componentes/Layout';
+import Index from './Componentes/Index';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+    {
+      index:true,
+      element: <Index />
+    },
+    {
+      path: '/carreras',
+      element: <ListaCarreras />
+    }]
+  },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
