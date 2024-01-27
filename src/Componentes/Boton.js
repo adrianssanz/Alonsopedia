@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import "../Estilos/Boton.css";
+import { ListaCarreras } from './ListaCarreras';
 import ReactDOM from 'react-dom';
 
 
