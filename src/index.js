@@ -19,7 +19,10 @@ const router = createBrowserRouter([
     {
       path: '/carreras',
       element: <ListaCarreras />
-    }]
+    },
+  {
+    
+  }]
   },
 ])
 

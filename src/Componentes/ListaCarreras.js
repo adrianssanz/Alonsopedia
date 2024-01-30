@@ -15,7 +15,8 @@ export function ListaCarreras() {
     }, [])
     return (
         <>
-            { carreras.length === 0 ? (<div>Cargando Resultados...</div>) : (
+            <h1 className='h1'>Resultados de las Carreras</h1>
+            { carreras.length === 0 ? (<div className='cargando'>Cargando Resultados...</div>) : (
                 <div className='carreras'>
                     {carreras.map(race=>(
                         <ItemCarrera {...race}/>

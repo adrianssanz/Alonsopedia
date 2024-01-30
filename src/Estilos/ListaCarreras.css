@@ -5,3 +5,14 @@
 
 }
 
+.h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.cargando{
+    text-align: center;
+    padding: 1rem;
+    font-size: large;
+}
+

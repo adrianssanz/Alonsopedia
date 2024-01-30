@@ -5,6 +5,8 @@ import Boton from "../Componentes/Boton.js";
 import { ListaCarreras } from "./ListaCarreras.js";
 import logoAlonso from "../imagenes/logoalonso.png";
 import { Outlet } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 
 // Componente principal de la página
 function Layout() {
@@ -19,11 +21,13 @@ function Layout() {
             </h3>
           </div>
           <div className="logo">
-            <img
-              className="imagenLogo"
-              src={logoAlonso}
-              alt="Logo Fernando Alonso"
-            />
+            <Link to="/">
+              <img
+                className="imagenLogo"
+                src={logoAlonso}
+                alt="Logo Fernando Alonso"
+              />
+            </Link>
           </div>
         </div>
 

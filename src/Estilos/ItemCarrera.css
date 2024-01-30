@@ -1,10 +1,8 @@
 .carrera-contenedor {
     width: 25%;
     padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px;
-    box-shadow: 2px 2px 5px black;
     background-color: #6a6a6c ;
     color: white;
 }
