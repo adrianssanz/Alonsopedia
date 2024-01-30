@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ListaCarreras } from './Componentes/ListaCarreras';
 import Layout from './Componentes/Layout';
 import Index from './Componentes/Index';
+import Dropdown from './Componentes/DesplegableCarreras';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,17 @@ const router = createBrowserRouter([
     },
     {
       path: '/carreras',
-      element: <ListaCarreras />
+      element: <Dropdown/>,
+      children: [
+        {
+          path: '/carreras/2021',
+          element: <ListaCarreras props="2021" />
+        },
+        {
+          path: '/carreras/2022',
+          element: <ListaCarreras props="2022" />
+        }
+      ]
     },
   {
     

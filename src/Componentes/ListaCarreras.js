@@ -4,26 +4,27 @@ import * as API from '../Services/Consultas';
 import '../Estilos/ListaCarreras.css';
 import Layout from './Layout';
 
-
-export function ListaCarreras() {
+export function ListaCarreras({ props }) {
     console.warn("Mostrando Lista Carreras");
 
-    const [carreras, setCarreras] = useState([])
+    const [carreras, setCarreras] = useState([]);
     
     useEffect(() => {
-        API.getAlldata().then(setCarreras);
-    }, [])
+        API.getAlldata(props).then(setCarreras);
+    }, [props]); // Asegúrate de incluir props como dependencia
+
     return (
         <>
-            <h1 className='h1'>Resultados de las Carreras</h1>
-            { carreras.length === 0 ? (<div className='cargando'>Cargando Resultados...</div>) : (
+            <h1 className='h1'>Resultados de Carreras de {props}</h1>
+            {carreras.length === 0 ? (
+                <div className='cargando'>Cargando Resultados...</div>
+            ) : (
                 <div className='carreras'>
-                    {carreras.map(race=>(
-                        <ItemCarrera {...race}/>
+                    {carreras.map(race => (
+                        <ItemCarrera key={race.id} {...race} />
                     ))}
                 </div>
-            )
-            }
+            )}
         </>
-    )
+    );
 }
