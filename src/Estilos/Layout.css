@@ -8,6 +8,7 @@
 * {
     font-family: "formula1-display-regular", sans-serif;
     margin: 0;
+    height: auto;
 }
 
 .cabecera {
@@ -45,7 +46,7 @@
     display: flex;
 }
 
-
-.contenido {
-    height: 100%;
+.contenido{
+    height: 72vh;
+    background-color: wheat;
 }

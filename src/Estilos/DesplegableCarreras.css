@@ -1,4 +1,8 @@
 .selector{
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 2rem;
+    font-size: large;
+    background-color: wheat;
 }
