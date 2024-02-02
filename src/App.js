@@ -2,6 +2,8 @@ import logoAlonso from "./imagenes/logoalonso.png";
 import "./App.css";
 import Boton from "./Componentes/Boton.js";
 import { ListaCarreras } from "./Componentes/ListaCarreras.js";
+import { ListaEquipos } from "./Componentes/ListaEquipos.js";
+
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
         <nav className="navegacion">
           <Boton 
             valor="Equipos" 
-            componenteAEjecutar=""
+            componenteAEjecutar={<ListaEquipos />}
             divId="contenido"          
           />
           <Boton 

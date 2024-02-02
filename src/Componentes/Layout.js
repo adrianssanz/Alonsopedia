@@ -33,7 +33,7 @@ function Layout() {
 
         <nav className="navegacion">
           <Boton valor="Inicio" ruta="/" />
-          <Boton valor="Equipos" ruta="" />
+          <Boton valor="Equipos" ruta="/equipos" />
           <Boton valor="Coches" ruta="" />
           <Boton valor="Resultados" ruta="/carreras" />
         </nav>

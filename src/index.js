@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ListaCarreras } from './Componentes/ListaCarreras';
+import { ListaEquipos } from './Componentes/ListaEquipos.js';
+import DetallesEquipo from './Componentes/DetallesEquipo.js';
 import Layout from './Componentes/Layout';
 import Index from './Componentes/Index';
 import Dropdown from './Componentes/DesplegableCarreras';
@@ -30,6 +31,14 @@ const router = createBrowserRouter([
           element: <ListaCarreras props="2022" />
         }
       ]
+    },
+    {
+      path: '/equipos',
+      element: <ListaEquipos/>,
+    },
+    {
+      path: '/equipos/:id',
+      element: <DetallesEquipo/>
     },
   {
     

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import ItemCarrera from './ItemCarrera';
 import * as API from '../Services/Consultas';
 import '../Estilos/ListaCarreras.css';
-import Layout from './Layout';
 
 export function ListaCarreras({ props }) {
     console.warn("Mostrando Lista Carreras");
