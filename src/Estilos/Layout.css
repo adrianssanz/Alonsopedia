@@ -46,6 +46,7 @@ html{
 
 .subtitulo {
     color: white;
+    text-align: left;
 }
 
 .logo {
@@ -56,10 +57,18 @@ html{
     
 }
 
+/* Estilos normales para la imagen */
 .imagenLogo {
-    width: auto; /* Asegura que la sombra no afecte a otros elementos en línea */
-    margin: 0 auto; /* Centra la imagen */
-  }
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .imagenLogo {
+        display: none; /* Oculta la imagen en pantallas más pequeñas */
+    }
+}
 
 .navegacion {
     display: flex;
