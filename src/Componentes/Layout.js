@@ -5,8 +5,7 @@ import Boton from "../Componentes/Boton.js";
 import { ListaCarreras } from "./ListaCarreras.js";
 import logoAlonso from "../imagenes/logoalonso.png";
 import { Outlet } from "react-router-dom";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 // Componente principal de la página
 function Layout() {
@@ -17,7 +16,7 @@ function Layout() {
           <div className="titulo">
             <h1>Alonsopedia 14</h1>
             <h3 className="subtitulo">
-              Tu Enciclopedia de Fernando Alonso de Confianza
+              Todas las Estadisticas de Fernando Alonso
             </h3>
           </div>
           <div className="logo">
@@ -40,6 +39,10 @@ function Layout() {
 
         <div id="contenido" className="contenido">
           <Outlet />
+        </div>
+        <div id="footer">
+          <p>© 2024 Alonsopedia.</p>
+          <p>Por <span className="negrita">Adrián Sanz</span> y <span className="negrita">Adrián Nieto</span></p>
         </div>
       </div>
     </div>

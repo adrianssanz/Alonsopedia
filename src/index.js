@@ -8,8 +8,11 @@ import DetallesEquipo from './Componentes/DetallesEquipo.js';
 import Layout from './Componentes/Layout';
 import Index from './Componentes/Index';
 import Dropdown from './Componentes/DesplegableCarreras';
+import DesplegableCarreras from './Componentes/DesplegableCarreras';
+import DesplegableEquipos from './Componentes/DesplegableEquipos.js';
 
 const router = createBrowserRouter([
+  
   {
     path: '/',
     element: <Layout />,
@@ -20,25 +23,26 @@ const router = createBrowserRouter([
     },
     {
       path: '/carreras',
-      element: <Dropdown/>,
+      element: <DesplegableCarreras/>,
       children: [
         {
-          path: '/carreras/2021',
-          element: <ListaCarreras props="2021" />
-        },
-        {
-          path: '/carreras/2022',
-          element: <ListaCarreras props="2022" />
+          path: '/carreras/:anio',
+          element: <ListaCarreras/>
         }
       ]
     },
     {
       path: '/equipos',
-      element: <ListaEquipos/>,
+      element: <DesplegableEquipos/>,
+      children: [
+        {
+          path: '/equipos/:id',
+          element: <DetallesEquipo/>
+        }
+      ]
     },
     {
-      path: '/equipos/:id',
-      element: <DetallesEquipo/>
+      
     },
   {
     

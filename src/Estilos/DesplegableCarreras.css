@@ -1,8 +1,26 @@
-.selector{
+.selector {
     display: flex;
+    flex-direction: row; /* Cambiado a fila para alinear horizontalmente */
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 2rem;
     font-size: large;
     background-color: wheat;
+}
+
+label {
+    margin-right: 10px; /* Agregado margen a la derecha del label para separarlo del select */
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Agregado margen a la derecha del select para separarlo del Boton */
+}
+
+.des-btn {
+    color: red;
 }
