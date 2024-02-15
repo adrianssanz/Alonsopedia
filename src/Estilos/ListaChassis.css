@@ -1,0 +1,19 @@
+.chassis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: wheat;
+}
+
+.h1{
+    text-align: center;
+    padding: 1rem;
+    background-color: wheat;
+}
+
+.cargando{
+    text-align: center;
+    padding: 1rem;
+    font-size: large;
+}
+

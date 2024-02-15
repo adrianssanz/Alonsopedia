@@ -4,7 +4,7 @@ export async function getAlldata(season){
     try{
         const response = await fetch(`${API_URL}/${season}/drivers/alonso/results.json`);
         const data=await response.json();
-        return data.MRData.RaceTable.Races;
+        return data.MRData.RaceTable;
     }
     catch(error){
         console.log("Error al cargar datos: "+error)
@@ -71,4 +71,24 @@ export async function getEquipoById(id){
     catch(error){
         console.log("Error al cargar equipos: "+error)
     }
+}
+
+export async function getAllEquiposJson(){
+    const respuesta=await fetch('http://localhost:3000/teams')
+    const resultado=await respuesta.json()
+    console.log(resultado)
+    return resultado
+}
+
+export async function getEquipoByIdJson(id) {
+    const respuesta = await fetch(`${'http://localhost:3000/teams'}?id=${id}`)
+    const resultado = await respuesta.json();
+    return resultado
+}
+
+export async function getChassisJson(){
+    const respuesta=await fetch('http://localhost:3000/chassis')
+    const resultado=await respuesta.json()
+    console.log(resultado)
+    return resultado
 }

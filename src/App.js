@@ -3,6 +3,7 @@ import "./App.css";
 import Boton from "./Componentes/Boton.js";
 import { ListaCarreras } from "./Componentes/ListaCarreras.js";
 import { ListaEquipos } from "./Componentes/ListaEquipos.js";
+import { ListaChassis } from "./Componentes/ListaChassis.js";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           />
           <Boton 
             valor="Coches"
-            componenteAEjecutar=""
+            componenteAEjecutar={<ListaChassis/>}
             divId="contenido"
           />
           <Boton

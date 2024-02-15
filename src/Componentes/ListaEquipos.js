@@ -1,14 +1,23 @@
-import { useState, useEffect } from 'react';
-import * as API from '../Services/Consultas';
+import { useLoaderData } from 'react-router-dom'
 import ItemEquipo from './ItemEquipo';
 import '../Estilos/ListaEquipos.css';
+import { getAllEquiposJson } from '../Services/Consultas';
+
+export async function loader() {
+    try {
+        const equipos = await getAllEquiposJson();
+        //console.log(equipos);
+        return equipos;
+    } catch (error) {
+        console.log('Error obteniendo equipos:'+error);
+        return [];
+    }
+}
 
 export function ListaEquipos() {
-    const [equipos, setEquipos] = useState([])
-    
-    useEffect(() => {
-        API.getAllEquipos().then(setEquipos);
-    }, [])
+    const equipos = useLoaderData();
+    //console.log(equipos)
+
     return (
         equipos && (
         <>
