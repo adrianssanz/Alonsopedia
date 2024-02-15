@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       ]
     },
     {
+      path: '/:circuito/detalles',
+      element: <Index />
+    },
+    {
       path: '/equipos',
       element: <DesplegableEquipos/>,
       children: [

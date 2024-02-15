@@ -35,6 +35,7 @@ function Layout() {
           <Boton valor="Equipos" ruta="/equipos" />
           <Boton valor="Coches" ruta="" />
           <Boton valor="Resultados" ruta="/carreras" />
+          <Boton valor="Otros" ruta="" />
         </nav>
 
         <div id="contenido" className="contenido">
