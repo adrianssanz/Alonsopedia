@@ -7,6 +7,10 @@
     color: white;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .carrera-titulo {
     text-align: center;
     font-size: larger;

@@ -5,22 +5,40 @@
     url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("truetype");
 }*/
 
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
 * {
-    font-family: "formula1-display-regular", sans-serif;
+    font-family: "formula1-display-regular", Poppins, Protest Strike, 'Times New Roman', Times, serif;
     margin: 0;
     height: auto;
 }
+html{
+    background-color: whitesmoke;
+}
 
 .cabecera {
-    background-color: #0066ff;
+    background-color: #0072bb;
     display: flex;
+    border-bottom:4px solid #fef200;
 }
 
 .titulo {
     width: 100%;
     text-align: left;
     font-size: 100%;
-    color: #f7d510;
+    color: #fef200;
     padding: 3rem;
     padding-left: 5%;
     margin: 5px;
@@ -28,6 +46,7 @@
 
 .subtitulo {
     color: white;
+    text-align: left;
 }
 
 .logo {
@@ -35,18 +54,43 @@
     margin: 5px;
     display: flex;
     justify-content: space-around;
+    
 }
 
+/* Estilos normales para la imagen */
 .imagenLogo {
     width: auto;
+    margin: 0 auto;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .imagenLogo {
+        display: none; /* Oculta la imagen en pantallas más pequeñas */
+    }
 }
 
 .navegacion {
-    background-color: #212121;
     display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ajustado a flex-start para adaptarse a la altura de los botones */
+    background-color: #0072bb;
+    
+}
+
+.negrita{
+    font-weight: bold;
 }
 
 .contenido{
-    height: 72vh;
-    background-color: wheat;
+    min-height: 60vh;
+    background-color: whitesmoke;
 }
+
+#footer {
+    background-color: #0072bb;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-top: 4px solid #fef200;
+  }

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Boton({ valor, ruta }) {
   return (
     <div>
-        <Link to={ruta} className="boton">
+        <Link to={ruta} className="btn">
           {valor}
         </Link>
     </div>

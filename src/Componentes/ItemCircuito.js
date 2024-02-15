@@ -1,8 +1,10 @@
 import React from 'react';
 import EstiloItemCircuito from '../Estilos/ItemCircuito.css';
+import { Link } from 'react-router-dom';
 
 function ItemCircuito(circuit) {
   return (
+    <Link to={`/${circuit.circuitName.replace(/\s+/g, '_')}/detalles`}  className="link">
     <div className='circuito'>
       <div>
         <strong>Circuito:</strong> {circuit.circuitName}
@@ -22,6 +24,7 @@ function ItemCircuito(circuit) {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

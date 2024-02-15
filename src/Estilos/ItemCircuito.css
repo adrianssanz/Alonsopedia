@@ -3,4 +3,16 @@
     color: white;
     border-radius: 5px;
     padding: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#Link{
+    text-decoration: none;
+}
+
+
+
+.circuito:hover{
+    background-color: darkslategrey;
 }

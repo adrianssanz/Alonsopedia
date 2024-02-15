@@ -1,27 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Boton from './Boton';
 import '../Estilos/DesplegableCarreras.css';
+import { getAllCarreras } from '../Services/Consultas.js';
 
-const Dropdown = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
+const DesplegableCarreras = () => {
+  const [opcionSeleccionada, setOpcionSeleccionada] = useState(null);
+  const [opciones, setOpciones] = useState([]);
+
+  useEffect(() => {
+    const obtenerCarreras = async () => {
+      try {
+        const carreras = await getAllCarreras();
+
+        // Extraer años únicos de las carreras
+        const añosUnicos = [...new Set(carreras.map(carrera => carrera.season))];
+
+        // Mapear los años únicos a las opciones deseadas
+        const opcionesAños = añosUnicos.map(año => ({
+          valor: año,
+          texto: año,
+        }));
+
+        setOpciones(opcionesAños);
+      } catch (error) {
+        console.error('Error al obtener carreras:', error);
+      }
+    };
+
+    obtenerCarreras();
+  }, []);
 
   const handleSelect = (event) => {
-    setSelectedOption(event.target.value);
+    setOpcionSeleccionada(event.target.value);
   };
 
   return (
     <div>
     <div className='selector'>
-      <label htmlFor="dropdown">Selecciona una opción:</label>
-      <select id="dropdown" onChange={handleSelect} value={selectedOption || ''}>
-        <option value="" disabled>Selecciona una opción</option>
-        <option value="2021">2021</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
+      <label htmlFor="desplegable">Selecciona una temporada:</label>
+      <select id="desplegable" onChange={handleSelect} value={opcionSeleccionada || ''}>
+        {/* Añade las opciones dinámicamente desde el estado 'opciones' */}
+        {opciones.map((opcion, index) => (
+            <option key={index} value={opcion.valor}>{opcion.texto}</option>
+          ))}
       </select>
 
-      <Boton valor="Cargar" ruta={`/carreras/${selectedOption}`} />
+      <Boton valor="Cargar" ruta={`/carreras/${opcionSeleccionada|| '2021'}`} />
 
     </div>
 
@@ -30,4 +55,4 @@ const Dropdown = () => {
   );
 };
 
-export default Dropdown;
+export default DesplegableCarreras;

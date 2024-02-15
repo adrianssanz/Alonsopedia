@@ -2,13 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: wheat;
+    background-color: whitesmoke;
 }
+
+
 
 .h1{
     text-align: center;
     padding: 1rem;
-    background-color: wheat;
+    background-color: whitesmoke;
+}
+
+.negrita{
+    font-weight: bold;
 }
 
 .cargando{

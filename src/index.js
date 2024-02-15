@@ -9,45 +9,57 @@ import { ListaChassis, loader as ListaChassisLoader } from './Componentes/ListaC
 import Layout from './Componentes/Layout';
 import Index from './Componentes/Index';
 import Dropdown from './Componentes/DesplegableCarreras';
+import DesplegableCarreras from './Componentes/DesplegableCarreras';
+import DesplegableEquipos from './Componentes/DesplegableEquipos.js';
 
 const router = createBrowserRouter([
+  
   {
     path: '/',
     element: <Layout />,
     children: [
-      {
-        index: true,
-        element: <Index />
-      },
-      {
-        path: '/carreras',
-        element: <Dropdown />,
-        children: [
-          {
-            path: '/carreras/:anio',
-            element: <ListaCarreras />,
-            loader: ListaCarrerasLoader,
-          },
-        ]
-      },
-      {
-        path: '/equipos',
-        element: <ListaEquipos />,
-        loader: ListaEquiposLoader,
-      },
-      {
-        path: '/equipos/:id',
-        element: <DetallesEquipo />,
-        loader: DetallesEquipoLoader,
-      },
-      {
-        path: '/chassis',
-        element: <ListaChassis />,
-        loader: ListaChassisLoader,
-      },
-      {
-
-      }]
+    {
+      index:true,
+      element: <Index />
+    },
+    {
+      path: '/carreras',
+      element: <DesplegableCarreras/>,
+      children: [
+        {
+          path: '/carreras/:anio',
+          element: <ListaCarreras/>,
+          loader: ListaCarrerasLoader,
+        }
+      ]
+    },
+    {
+      path: '/:circuito/detalles',
+      element: <Index />
+    },
+    {
+      path: '/equipos',
+      element: <DesplegableEquipos/>,
+      loader: ListaEquiposLoader,
+      children: [
+        {
+          path: '/equipos/:id',
+          element: <DetallesEquipo/>,
+          loader: DetallesEquipoLoader,
+        }
+      ]
+    },
+    {
+      path: '/chassis',
+      element: <ListaChassis />,
+      loader: ListaChassisLoader,
+    },
+    {
+      
+    },
+  {
+    
+  }]
   },
 ])
 
