@@ -7,13 +7,17 @@ function ItemChassis(chassis) {
       <div className='item-chassis'>
         <h1>{chassis.nombre}</h1>
         <h3>{chassis.equipo}</h3>
-        <p>Temporada: {chassis.temporada}</p>
-        <p>Diseñadores: {chassis.diseñador.map((disenador, index) => (
+        <p><span className='negrita'>Temporada: </span> {chassis.temporada}</p>
+        <p><span className='negrita'>Diseñadores:</span> {chassis.diseñador.map((disenador, index) => (
           <span key={index}>{disenador}{index !== chassis.diseñador.length - 1 && ', '}</span>
         ))}</p>
-        <p>Materiales: {chassis.material.map((material, index) => (
+        <p><span className='negrita'>Material:</span> {chassis.material.map((material, index) => (
           <span key={index}>{material}{index !== chassis.material.length - 1 && ', '}</span>
-        ))}</p>      <p>Descripción: {chassis.descripcion}</p>
+        ))}</p>      
+        <div className='descripcion-chasis'>
+        <p><span className='negrita'>Descripción: </span> {chassis.descripcion}</p>
+
+        </div>
       </div>
     </>
   );

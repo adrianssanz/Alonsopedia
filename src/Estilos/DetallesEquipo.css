@@ -1,0 +1,42 @@
+.contenedor-equipo {
+    display: flex;
+    flex-direction: column; /* Cambia a una columna */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding-bottom: 5%;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-bottom: 10px; /* Ajusta el espacio entre el nombre del equipo y el div datos-equipo */
+  }
+  
+  .datos-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5%;
+    background-color:aliceblue;
+    box-shadow: 0 4px 8px black;
+  }
+  
+  .imagen-equipo {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+  
+  .info-equipo {
+    flex: 1 1 300px;
+  }
+  
+  @media (max-width: 600px) {
+    .datos-equipo {
+      flex-direction: column;
+    }
+  
+    .imagen-equipo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

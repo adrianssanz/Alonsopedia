@@ -1,16 +1,17 @@
-import { useLoaderData } from 'react-router-dom'
-import React from 'react';
-import { getEquipoByIdJson } from '../Services/Consultas';
+import { useLoaderData } from "react-router-dom";
+import React from "react";
+import { getEquipoByIdJson } from "../Services/Consultas";
+import "../Estilos/DetallesEquipo.css";
 
-export async function loader({params}) {
+export async function loader({ params }) {
   try {
-      const equipo = await getEquipoByIdJson(params.id);
-      //console.log(equipo[0]);
-      //console.log(params.id);
-      return equipo[0];
+    const equipo = await getEquipoByIdJson(params.id);
+    //console.log(equipo[0]);
+    //console.log(params.id);
+    return equipo[0];
   } catch (error) {
-      console.log('Error obteniendo detalles equipo:'+error);
-      return [];
+    console.log("Error obteniendo detalles equipo:" + error);
+    return [];
   }
 }
 
@@ -20,19 +21,42 @@ export const DetallesEquipo = () => {
 
   return (
     equipo && (
-      <>
-        <div>
-          <h1>{equipo.name}</h1>
-          <img src={equipo.logo} alt="" />
-          <p>Base: {equipo.base}</p>
-          <p>Primer año en F1: {equipo.first_team_entry}</p>
-          <p>Temporadas en las que participo alonso: {equipo.alonso_seasons}</p>
-          <p>Titulos mundiales: {equipo.world_championships}</p>
-          <p>Presidente: {equipo.president}</p>
-          <p>Director: {equipo.director}</p>
-          <p>Motor: {equipo.engine}</p>
+      <div className="contenedor-equipo">
+        <h2>{equipo.name}</h2>
+        <div className="datos-equipo">
+          <div className="imagen-equipo">
+            <img src={equipo.logo} alt="" />
+          </div>
+          <div className="info-equipo">
+            <p>
+              <span className="negrita">Base:</span> {equipo.base}
+            </p>
+            <p>
+              <span className="negrita">Primer año en F1:</span>{" "}
+              {equipo.first_team_entry}
+            </p>
+            <p>
+              <span className="negrita">
+                Temporadas en las que participó Alonso:
+              </span>{" "}
+              {equipo.alonso_seasons}
+            </p>
+            <p>
+              <span className="negrita">Títulos mundiales:</span>{" "}
+              {equipo.world_championships}
+            </p>
+            <p>
+              <span className="negrita">Presidente:</span> {equipo.president}
+            </p>
+            <p>
+              <span className="negrita">Director:</span> {equipo.director}
+            </p>
+            <p>
+              <span className="negrita">Motor:</span> {equipo.engine}
+            </p>
+          </div>
         </div>
-      </>
+      </div>
     )
-  )
-}
+  );
+};
