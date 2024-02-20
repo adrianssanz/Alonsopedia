@@ -10,9 +10,12 @@ function ItemCircuito(circuit) {
   } catch (error) {
     circuitImage = require(`../imagenes/image-not-found.jpg`);
   }
-  
+
   return (
     <div className="circuito">
+      <div>
+        <strong>ID:</strong> {circuit.circuitId}
+      </div>
       <div>
         <strong>Circuito:</strong> {circuit.circuitName}
       </div>
