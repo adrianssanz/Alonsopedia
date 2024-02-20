@@ -45,7 +45,7 @@ const DesplegableCarreras = () => {
           ))}
       </select>
 
-      <Boton valor="Cargar" ruta={`/carreras/${opcionSeleccionada|| '2021'}`} />
+      <Boton valor="Cargar" ruta={`/carreras/${opcionSeleccionada|| '2001'}`} />
 
     </div>
 

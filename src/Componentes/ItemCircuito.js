@@ -1,6 +1,7 @@
 import React from "react";
 import EstiloItemCircuito from "../Estilos/ItemCircuito.css";
 import { Link } from "react-router-dom";
+import ImagenCircuito from "../imagenes/circuitos/spa.png";
 
 function ItemCircuito(circuit) {
   return (
@@ -25,6 +26,13 @@ function ItemCircuito(circuit) {
       <a className="urlCircuito" href={circuit.url}>
         Mas infomación sobre {circuit.circuitName}
       </a>
+      <div className="contenedorImagenCircuito">
+            <img
+              className="imagenCircuito"
+              src='../imagenes/circuitos/spa.png'
+              alt="Imagen Circuito"
+            />
+          </div>
     </div>
   );
 }
