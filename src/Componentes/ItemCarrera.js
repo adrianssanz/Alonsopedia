@@ -8,6 +8,13 @@ function ItemCarrera(race) {
   );
   const alonsoVueltaRapida = alonsoResultado?.FastestLap;
 
+  let circuitImage;
+  try {
+    circuitImage = require(`../imagenes/${race.Circuit.circuitId}.png`);
+  } catch (error) {
+    circuitImage = require(`../imagenes/image-not-found.jpg`);
+  }
+
   return (
     <div className="carrera-contenedor">
       <div className="carrera-titulo">
@@ -28,6 +35,9 @@ function ItemCarrera(race) {
         </div>
         <strong>Vuelta Rápida:</strong>{" "}
         {alonsoVueltaRapida ? alonsoVueltaRapida.Time.time : "N/A"}
+      </div>
+      <div>
+        <img src={circuitImage} className="" alt="" />
       </div>
       <div>
         <ItemCircuito {...race.Circuit} />

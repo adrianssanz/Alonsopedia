@@ -2,7 +2,7 @@
     "teams": [
         {
             "id": 1,
-            "name": "Minardi",
+            "name": "Minardi F1 Team",
             "logo": "https://cdn.freebiesupply.com/logos/large/2x/minardi-f1-3-logo-png-transparent.png",
             "base": "Faenza, Italia",
             "first_team_entry": 1985,
@@ -23,7 +23,7 @@
         },
         {
             "id": 2,
-            "name": "Renault",
+            "name": "Renault Formula 1 Team",
             "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b9/Renault_F1_Team_Mild_Seven_2003-2006_Logo.svg/275px-Renault_F1_Team_Mild_Seven_2003-2006_Logo.svg.png",
             "base": "Enstone, Reino Unido",
             "first_team_entry": 1977,
@@ -388,10 +388,10 @@
                 "nido de abeja"
             ],
             "descripcion": "El chasis A521 de Alpine era el modelo del equipo francés para la temporada 2021, que fue la segunda de Alonso con ellos tras su paso por Ferrari. Estaba diseñado por Pat Fry y tenía una estructura de fibra de carbono y nido de abeja. El chasis era una evolución del anterior y contaba con un motor Renault como proveedor. Alonso consiguió dos podios y el sexto puesto en el campeonato de pilotos.",
-            "url": "https://preview.free3d.com/img/2013/11/2397159931636615131/dlw2642b.jpg"
+            "url": "https://okdiario.com/img/2021/03/16/000_94y7ya-1-655x368.jpg"
         },
         {
-            "nombre": "A521",
+            "nombre": "A522",
             "equipo": "Alpine",
             "temporada": "2022",
             "diseñador": [
@@ -402,7 +402,7 @@
                 "nido de abeja"
             ],
             "descripcion": "El chasis A521 de Alpine era el modelo del equipo francés para la temporada 2022, que fue el regreso de Alonso con ellos tras su paso por McLaren. Estaba diseñado por Pat Fry y tenía una estructura de fibra de carbono y nido de abeja. El chasis era poco competitivo y fiable, y se vio afectado por el cambio de reglamento que limitó el uso del fondo plano y el difusor. Alonso no consiguió ningún podio y quedó décimo en el campeonato de pilotos.",
-            "url": "https://preview.free3d.com/img/2013/11/2397159931636615131/dlw2642b.jpg"
+            "url": "https://cdn-9.motorsport.com/images/mgl/Yv8pjn10/s700/alpine-a522-1.jpg"
         },
         {
             "nombre": "AMR23",
@@ -416,7 +416,7 @@
                 "nido de abeja"
             ],
             "descripcion": "El chasis AMR23 de Aston Martin era el modelo del equipo británico para la temporada 2023, que fue el debut de Alonso con ellos tras su paso por Alpine. Estaba diseñado por Andrew Green y tenía una estructura de fibra de carbono y nido de abeja. El chasis era muy competitivo y rápido, y se adaptó bien al cambio de reglamento que introdujo los neumáticos de 18 pulgadas y el efecto suelo. Alonso consiguió siete podios y el cuarto puesto en el campeonato de pilotos.",
-            "url": "https://preview.free3d.com/img/2013/11/2397159931636615131/dlw2642b.jpg"
+            "url": "https://cdn-images.motor.es/image/m/800w.webp/fotos-noticias/2023/02/claves-aston-martin-amr23-f1-fernando-alonso-202393051-1676545442_6.jpg"
         }
     ]
 }
