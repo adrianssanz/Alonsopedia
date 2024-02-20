@@ -14,9 +14,6 @@ function ItemCircuito(circuit) {
   return (
     <div className="circuito">
       <div>
-        <strong>ID:</strong> {circuit.circuitId}
-      </div>
-      <div>
         <strong>Circuito:</strong> {circuit.circuitName}
       </div>
       <div className="circuito-contenedor">
