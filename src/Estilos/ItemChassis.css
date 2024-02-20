@@ -31,6 +31,8 @@ h1{
 .fotoChassis {
     width: auto;
     align-items: center;
+    border-radius: 10px; /* Hace que la imagen sea redonda */
+    overflow: hidden;
 }
 
 .descripcion-chasis{
