@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import ImagenCircuito from "../imagenes/circuitos/spa.png";
 
 function ItemCircuito(circuit) {
+  let circuitImage;
+  try {
+    circuitImage = require(`../imagenes/circuitos/${circuit.circuitId}.png`);
+  } catch (error) {
+    circuitImage = require(`../imagenes/image-not-found.jpg`);
+  }
+  
   return (
     <div className="circuito">
       <div>
@@ -23,16 +30,12 @@ function ItemCircuito(circuit) {
           <strong>Longitud:</strong> {circuit.Location.long}
         </div>
       </div>
+      <div className="contenedorImagenCircuito">
+        <img src={circuitImage} alt="" />
+      </div>
       <a className="urlCircuito" href={circuit.url}>
         Mas infomación sobre {circuit.circuitName}
       </a>
-      <div className="contenedorImagenCircuito">
-            <img
-              className="imagenCircuito"
-              src='../imagenes/circuitos/spa.png'
-              alt="Imagen Circuito"
-            />
-          </div>
     </div>
   );
 }
