@@ -1,15 +1,14 @@
-import React from 'react';
-import EstiloItemCircuito from '../Estilos/ItemCircuito.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import EstiloItemCircuito from "../Estilos/ItemCircuito.css";
+import { Link } from "react-router-dom";
 
 function ItemCircuito(circuit) {
   return (
-    <Link to={`/${circuit.circuitName.replace(/\s+/g, '_')}/detalles`}  className="link">
-    <div className='circuito'>
+    <div className="circuito">
       <div>
         <strong>Circuito:</strong> {circuit.circuitName}
       </div>
-      <div className='circuito-contenedor'>
+      <div className="circuito-contenedor">
         <div>
           <strong>Ciudad:</strong> {circuit.Location.locality}
         </div>
@@ -23,9 +22,11 @@ function ItemCircuito(circuit) {
           <strong>Longitud:</strong> {circuit.Location.long}
         </div>
       </div>
+      <a className="urlCircuito" href={circuit.url}>
+        Mas infomación sobre {circuit.circuitName}
+      </a>
     </div>
-    </Link>
   );
-};
+}
 
 export default ItemCircuito;

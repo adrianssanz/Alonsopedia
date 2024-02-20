@@ -1,18 +1,23 @@
-.circuito{
+.circuito {
     background-color: #212121;
     color: white;
     border-radius: 5px;
     padding: 2rem;
-    cursor: pointer;
     text-decoration: none;
-}
-
+    min-height: 200px; 
+  }
+  
 #Link{
     text-decoration: none;
 }
 
 
+.urlCircuito{
+    color: lightblue;
 
-.circuito:hover{
-    background-color: darkslategrey;
+}
+
+.urlCircuito:hover{
+    text-decoration: underline;
+    color: blue;
 }

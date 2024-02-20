@@ -18,8 +18,7 @@ const DesplegableCarreras = () => {
 
         // Mapear los años únicos a las opciones deseadas
         const opcionesAños = añosUnicos.map(año => ({
-          valor: año,
-          texto: año,
+          valor: año
         }));
 
         setOpciones(opcionesAños);
@@ -42,7 +41,7 @@ const DesplegableCarreras = () => {
       <select id="desplegable" onChange={handleSelect} value={opcionSeleccionada || ''}>
         {/* Añade las opciones dinámicamente desde el estado 'opciones' */}
         {opciones.map((opcion, index) => (
-            <option key={index} value={opcion.valor}>{opcion.texto}</option>
+            <option key={index} value={opcion.valor}>{opcion.valor}</option>
           ))}
       </select>
 

@@ -1,10 +1,26 @@
 .carrera-contenedor {
     width: 25%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
     margin: 20px;
     background-color: #6a6a6c ;
     color: white;
+}
+
+.vuelta-rapida{
+    text-shadow: 2px 2px 5px black;
+    color: #fef200;
+    background-color: #0072bb;
+    border: 1px solid #fef200;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.carrera-datos{
+    margin: 10px;
 }
 
 .link{
