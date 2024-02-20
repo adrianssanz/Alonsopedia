@@ -54,6 +54,9 @@ export const DetallesEquipo = () => {
             <p>
               <span className="negrita">Motor:</span> {equipo.engine}
             </p>
+            <a className="urlEquipo" href={`https://es.wikipedia.org/wiki/${equipo.name}`} target="_blank">
+              Mas infomación sobre {equipo.name}
+            </a>
           </div>
         </div>
       </div>
