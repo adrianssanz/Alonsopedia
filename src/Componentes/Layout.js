@@ -2,7 +2,6 @@
 import React from "react";
 import "../Estilos/Layout.css";
 import Boton from "../Componentes/Boton.js";
-import { ListaCarreras } from "./ListaCarreras.js";
 import logoAlonso from "../imagenes/logoalonso.png";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -34,7 +33,7 @@ function Layout() {
           <Boton valor="Inicio" ruta="/" />
           <Boton valor="Equipos" ruta="/equipos/6" />
           <Boton valor="Coches" ruta="/chassis" />
-          <Boton valor="Resultados" ruta="/carreras/2023" />
+          <Boton valor="Carreras" ruta="/carreras/2023" />
           <Boton valor="Otros" ruta="" />
         </nav>
 
