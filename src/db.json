@@ -417,6 +417,21 @@
             ],
             "descripcion": "El chasis AMR23 de Aston Martin era el modelo del equipo británico para la temporada 2023, que fue el debut de Alonso con ellos tras su paso por Alpine. Estaba diseñado por Andrew Green y tenía una estructura de fibra de carbono y nido de abeja. El chasis era muy competitivo y rápido, y se adaptó bien al cambio de reglamento que introdujo los neumáticos de 18 pulgadas y el efecto suelo. Alonso consiguió siete podios y el cuarto puesto en el campeonato de pilotos.",
             "url": "https://cdn-images.motor.es/image/m/800w.webp/fotos-noticias/2023/02/claves-aston-martin-amr23-f1-fernando-alonso-202393051-1676545442_6.jpg"
-        }
+        },
+        {
+            "nombre": "AMR24",
+            "equipo": "Aston Martin",
+            "temporada": "2024",
+            "diseñador": [
+              "Andrew Green"
+            ],
+            "material": [
+              "fibra de carbono",
+              "nido de abeja"
+            ],
+            "descripcion": "El chasis AMR24 de Aston Martin es la evolución del modelo del equipo británico para la temporada 2024. Se espera que el monoplaza sea aún más competitivo que su predecesor, con mejoras en la aerodinámica, la suspensión y el motor. Fernando Alonso y Lance Stroll estarán al volante del AMR24, con la esperanza de luchar por podios y victorias.",
+            "url": "https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1707817227/fom-website/2023/Aston%20Martin/AMR24%20Shakedown/F12403_153543SMG_8815.jpg.transform/9col/image.jpg"
+          }
+          
     ]
 }

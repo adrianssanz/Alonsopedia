@@ -23,4 +23,5 @@ h3{
 img {
     width: auto;
     height: 175px;
+    border-radius: 5px;
 }
