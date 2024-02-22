@@ -8,6 +8,7 @@ import { DetallesEquipo, loader as DetallesEquipoLoader } from './Componentes/De
 import { ListaChassis, loader as ListaChassisLoader } from './Componentes/ListaChassis.js';
 import Layout from './Componentes/Layout';
 import Index from './Componentes/Index';
+import Fernando from './Componentes/Fernando.js';
 import Dropdown from './Componentes/DesplegableCarreras';
 import DesplegableCarreras from './Componentes/DesplegableCarreras';
 import DesplegableEquipos from './Componentes/DesplegableEquipos.js';
@@ -55,7 +56,8 @@ const router = createBrowserRouter([
       loader: ListaChassisLoader,
     },
     {
-      
+      path: '/fernandoAlonso',
+      element: <Fernando />
     },
   {
     

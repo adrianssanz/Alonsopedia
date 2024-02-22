@@ -27,6 +27,11 @@ body, html {
     box-shadow: 0 4px 8px black; /* Puedes ajustar los valores según tus preferencias */
 }
 
+.textoAlonso{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .div2 {
     flex: 1;
     margin: 0px;
@@ -54,3 +59,19 @@ body, html {
         margin: 10px 0;
     }
 }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
