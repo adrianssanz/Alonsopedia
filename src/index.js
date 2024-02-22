@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       ]
     },
     {
-      path: '/chassis',
+      path: '/coches',
       element: <ListaChassis />,
       loader: ListaChassisLoader,
     },
