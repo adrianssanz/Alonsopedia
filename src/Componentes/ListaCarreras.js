@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router-dom";
 import ItemCarrera from './ItemCarrera';
 import * as API from '../Services/Consultas';
 import '../Estilos/ListaCarreras.css';
-import { useParams } from 'react-router-dom';
 
 export async function loader({ params }) {
     const carreras = await API.getAlldata(params.anio);
