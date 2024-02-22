@@ -29,7 +29,7 @@ function ItemCarrera(race) {
         <strong>Vuelta Rápida:</strong>{" "}
         {alonsoVueltaRapida ? alonsoVueltaRapida.Time.time : "N/A"}
       </div>
-      <div>
+      <div className="circuito-contenedor">
         <ItemCircuito {...race.Circuit} />
         {/*<button onClick={getCircuit}>Información del circuito</button>*/}
       </div>

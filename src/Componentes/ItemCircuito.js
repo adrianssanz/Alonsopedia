@@ -16,7 +16,7 @@ function ItemCircuito(circuit) {
       <div>
         <strong>Circuito:</strong> {circuit.circuitName}
       </div>
-      <div className="circuito-contenedor">
+      <div className="contenedorDatosCircuito">
         <div>
           <strong>Ciudad:</strong> {circuit.Location.locality}
         </div>
@@ -29,9 +29,9 @@ function ItemCircuito(circuit) {
         <div>
           <strong>Longitud:</strong> {circuit.Location.long}
         </div>
-      </div>
       <div className="contenedorImagenCircuito">
         <img src={circuitImage} alt="" />
+      </div>
       </div>
       <a className="urlCircuito" href={circuit.url}>
         Mas infomación sobre {circuit.circuitName}

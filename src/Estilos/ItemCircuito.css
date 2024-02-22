@@ -1,23 +1,45 @@
 .circuito {
-    background-color: #212121;
+    background-color: #373738;
     color: white;
     border-radius: 5px;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     text-decoration: none;
-    min-height: 200px; 
-  }
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
   
 #Link{
     text-decoration: none;
 }
 
+.contenedorDatosCircuito {
+    flex: 1;
+}
+
+.contenedorImagenCircuito{
+    /*background-color: #b4b4b8;*/
+    background-color: lightblue;
+    border: 3px solid #0072bb;
+    box-shadow: inset 0 0 10px black;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contenedorImagenCircuito img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .urlCircuito{
     color: lightblue;
-
+    margin-top: 20px;
 }
 
 .urlCircuito:hover{
     text-decoration: underline;
-    color: blue;
+    color: #0072bb;
 }

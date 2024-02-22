@@ -26,6 +26,8 @@ h1{
 .contenedor-fotoChassis{
     display: flex;
     justify-content: center;
+    flex: 1;
+    align-items: end;
 }
 
 .fotoChassis {
@@ -42,5 +44,8 @@ h1{
     margin: 0.5rem;
     padding: 1rem;
     min-height: 425px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
