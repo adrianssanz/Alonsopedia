@@ -18,7 +18,7 @@ export function ListaCarreras() {
 
     return (
         <>
-            <h1 className='h1'>Resultados de Carreras de {result.season}</h1>
+            <h1 className='tituloCarreras'>Resultados de Carreras de {result.season}</h1>
             {carreras.length === 0 ? (
                 <div className='cargando'>Cargando Resultados...</div>
             ) : (

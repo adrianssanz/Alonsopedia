@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Boton from "./Boton";
-import "../Estilos/DesplegableEquipos.css";
+import "../Estilos/Desplegable.css";
 
 const DesplegableEquipos = () => {
   const [opcionSeleccionada, setOpcionSeleccionada] = useState(null);

@@ -6,10 +6,11 @@
     margin: 0;
     padding: 2rem;
     font-size: large;
-    background-color: wheat;
+    color: white;
 }
 
 label {
+    text-shadow: 2px 2px 5px black;
     margin-right: 10px; /* Agregado margen a la derecha del label para separarlo del select */
 }
 

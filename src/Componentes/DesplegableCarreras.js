@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Boton from './Boton';
-import '../Estilos/DesplegableCarreras.css';
+import '../Estilos/Desplegable.css';
 import { getAllCarreras } from '../Services/Consultas.js';
 
 const DesplegableCarreras = () => {

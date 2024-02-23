@@ -22,7 +22,7 @@ export const DetallesEquipo = () => {
   return (
     equipo && (
       <div className="contenedor-equipo">
-        <h2>{equipo.name}</h2>
+        <h2 className="tituloEquipo">{equipo.name}</h2>
         <div className="datos-equipo">
           <div className="imagen-equipo">
             <img src={equipo.logo} alt="" />

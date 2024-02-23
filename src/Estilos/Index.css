@@ -9,6 +9,7 @@ body, html {
     display: flex;
     flex-direction: row;
     height: 65.2vh;
+    
 }
 
 .div1 {
@@ -22,6 +23,8 @@ body, html {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.692);
+    backdrop-filter: blur(10px);
     
     /* Agregar sombra */
     box-shadow: 0 4px 8px black; /* Puedes ajustar los valores según tus preferencias */

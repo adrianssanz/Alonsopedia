@@ -2,15 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: whitesmoke;
 }
 
 
 
-.h1{
+.tituloCarreras{
     text-align: center;
     padding: 1rem;
-    background-color: whitesmoke;
+    color:white;
 }
 
 .negrita{

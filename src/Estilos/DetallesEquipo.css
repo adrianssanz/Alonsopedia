@@ -6,7 +6,9 @@
     box-sizing: border-box;
   }
   
-  h2 {
+  .tituloEquipo {
+    color: white;
+    text-shadow: 2px 2px 5px black;
     margin-bottom: 10px; /* Ajusta el espacio entre el nombre del equipo y el div datos-equipo */
   }
   
@@ -16,7 +18,8 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: 5%;
-    background-color:aliceblue;
+    background-color:rgba(255, 255, 255, 0.692);
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px black;
   }
   
