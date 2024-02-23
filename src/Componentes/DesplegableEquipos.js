@@ -20,12 +20,12 @@ const DesplegableEquipos = () => {
             onChange={handleSelect}
             value={opcionSeleccionada || ""}
           >
+            <option value="6">Aston Martin</option>
             <option value="1">Minardi</option>
             <option value="2">Renault</option>
             <option value="3">McLaren</option>
             <option value="4">Ferrari</option>
             <option value="5">Alpine</option>
-            <option value="6">Aston Martin</option>
           </select>
 
           <Boton valor="Cargar" ruta={`/equipos/${opcionSeleccionada || '1'}`} />
