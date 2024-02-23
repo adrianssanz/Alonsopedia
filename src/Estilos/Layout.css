@@ -84,7 +84,11 @@ html{
 
 .contenido{
     min-height: 60vh;
-    background-color: whitesmoke;
+    background-image: linear-gradient(to top right, #0073bb8e , #fef10091), url('https://theobjective.com/wp-content/uploads/2023/09/FERNANDO-ALONSO.jpg');
+
+
+    background-size: cover;
+    background-position: center center;
 }
 
 #footer {
