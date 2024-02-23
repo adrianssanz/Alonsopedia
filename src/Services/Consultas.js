@@ -11,15 +11,9 @@ export async function getAlldata(season){
     }
 };
 
-
-
-
-const API_URL_ergast='https://ergast.com/api/f1'
-const API_URL_sports='https://v1.formula-1.api-sports.io'
-
 export async function getAllCarreras(){
     try{
-        const response = await fetch(`${API_URL_ergast}/drivers/alonso/results.json?limit=500`);
+        const response = await fetch(`${API_URL}/drivers/alonso/results.json?limit=500`);
         const data=await response.json();
         return data.MRData.RaceTable.Races;
     }
@@ -30,46 +24,12 @@ export async function getAllCarreras(){
 
 export async function getCarrerasBySeason(season){
     try{
-        const response = await fetch(`${API_URL_ergast}/${season}/drivers/alonso/results.json`);
+        const response = await fetch(`${API_URL}/${season}/drivers/alonso/results.json`);
         const data=await response.json();
         return data.MRData.RaceTable.Races;
     }
     catch(error){
         console.log("Error al cargar resultados: "+error)
-    }
-}
-
-export async function getAllEquipos(){
-    try{
-        const response = await fetch(`${API_URL_sports}/drivers?search=alonso`, {
-            method: "GET",
-            headers: {
-              "x-rapidapi-host": "v1.formula-1.api-sports.io",
-              "x-rapidapi-key": "9d9531dc54bfaabe458eb69203ff29d2"
-            }
-          });
-        const data=await response.json();
-        return data.response[0].teams;
-    }
-    catch(error){
-        console.log("Error al cargar equipos: "+error)
-    }
-}
-
-export async function getEquipoById(id){
-    try{
-        const response = await fetch(`${API_URL_sports}/teams?id=${id}`, {
-            method: "GET",
-            headers: {
-              "x-rapidapi-host": "v1.formula-1.api-sports.io",
-              "x-rapidapi-key": "9d9531dc54bfaabe458eb69203ff29d2"
-            }
-          });
-        const data=await response.json();
-        return data.response[0];
-    }
-    catch(error){
-        console.log("Error al cargar equipos: "+error)
     }
 }
 

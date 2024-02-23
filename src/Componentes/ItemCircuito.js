@@ -1,14 +1,12 @@
 import React from "react";
-import EstiloItemCircuito from "../Estilos/ItemCircuito.css";
-import { Link } from "react-router-dom";
-import ImagenCircuito from "../imagenes/circuitos/spa.png";
+import "../Estilos/ItemCircuito.css";
 
 function ItemCircuito(circuit) {
   let circuitImage;
   try {
     circuitImage = require(`../imagenes/circuitos/${circuit.circuitId}.png`);
   } catch (error) {
-    circuitImage = require(`../imagenes/image-not-found.jpg`);
+    circuitImage = require(`../imagenes/image-not-found.jpeg`);
   }
 
   return (
