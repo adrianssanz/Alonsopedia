@@ -44,6 +44,7 @@ function Layout() {
           <p>© 2024 Alonsopedia.</p>
           <p>Por <span className="negrita">Adrián Sanz</span> y <span className="negrita">Adrián Nieto</span></p>
           <p>Agradecimientos a Ergast (Creador de la api) <br/> y a <span className="negrita">Fernando Alonso</span>.</p>
+          <img className='cruz' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cruz_de_Asturias.svg/1200px-Cruz_de_Asturias.svg.png"></img>
         </div>
       </div>
     </div>
