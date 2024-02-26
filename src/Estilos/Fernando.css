@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.contenedorInformacion {
+    display: flex;
+    flex-direction: row;
+    height: 65.2vh;
+    
+}
+
+.divImagen {
+    text-align: center;
+    flex: 1;
+    margin: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.692);
+    backdrop-filter: blur(10px);
+    
+    /* Agregar sombra */
+    box-shadow: 0 4px 8px black; /* Puedes ajustar los valores según tus preferencias */
+}
+
+.textoAlonso{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.divTexto {
+    text-align: center;
+    color:white;
+    font-size: 17px;
+    text-align: left;
+    flex: 1;
+    margin: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.403);
+    backdrop-filter: blur(10px);
+    
+    /* Agregar sombra */
+    box-shadow: 0 4px 8px black;; /* Ocultar cualquier desbordamiento de contenido */
+}
+
+.fotoAlonso {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste para cubrir completamente el contenedor */
+    border-radius: 0px;
+}
+
+.centrar-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* Ajusta la altura según tus necesidades */
+  }
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .div1, .div2 {
+        margin: 10px 0;
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

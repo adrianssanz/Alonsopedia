@@ -43,6 +43,7 @@ function Layout() {
         <div id="footer">
           <p>© 2024 Alonsopedia.</p>
           <p>Por <span className="negrita">Adrián Sanz</span> y <span className="negrita">Adrián Nieto</span></p>
+          <p>Agradecimientos a Ergast (Creador de la api) <br/> y a <span className="negrita">Fernando Alonso</span>.</p>
         </div>
       </div>
     </div>
