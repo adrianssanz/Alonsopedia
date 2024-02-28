@@ -1,47 +1,42 @@
-/*@font-face{
-    font-family:"formula1-display-regular";
-    src:url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("woff"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("opentype"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("truetype");
-}*/
-
 .protest-strike-regular {
     font-family: "Protest Strike", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
-  
-
-  .poppins-bold {
+.poppins-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
 * {
     font-family: "formula1-display-regular", Poppins, Protest Strike, 'Times New Roman', Times, serif;
     margin: 0;
     height: auto;
 }
-html{
+
+html {
     background-color: whitesmoke;
 }
 
 .cabecera {
     background-color: #0072bb;
     display: flex;
-    border-bottom:4px solid #fef200;
+    border-bottom: 4px solid #fef200;
 }
 
 .titulo {
     width: 100%;
-    text-align: left;
     font-size: 100%;
     color: #fef200;
     padding: 3rem;
     padding-left: 5%;
     margin: 5px;
+}
+
+.titulo h1 {
+    text-align: left;
 }
 
 .subtitulo {
@@ -54,7 +49,7 @@ html{
     margin: 5px;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 /* Estilos normales para la imagen */
@@ -66,25 +61,27 @@ html{
 /* Media query para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
     .imagenLogo {
-        display: none; /* Oculta la imagen en pantallas más pequeñas */
+        display: none;
+        /* Oculta la imagen en pantallas más pequeñas */
     }
 }
 
 .navegacion {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Ajustado a flex-start para adaptarse a la altura de los botones */
+    align-items: flex-start;
+    /* Ajustado a flex-start para adaptarse a la altura de los botones */
     background-color: #0072bb;
-    
+
 }
 
-.negrita{
+.negrita {
     font-weight: bold;
 }
 
-.contenido{
+.contenido {
     min-height: 60vh;
-    background-image: linear-gradient(to top right, #0073bb8e , #fef10091), url('https://i.pinimg.com/originals/5a/38/f3/5a38f32120dfccad35adda0c8ee0e4d5.jpg');
+    background-image: linear-gradient(to top right, #0073bb8e, #fef10091), url('https://i.pinimg.com/originals/5a/38/f3/5a38f32120dfccad35adda0c8ee0e4d5.jpg');
 
 
     background-size: cover;
@@ -97,9 +94,9 @@ html{
     text-align: center;
     padding: 40px;
     border-top: 4px solid #fef200;
-  }
+}
 
-.cruz{
+.cruz {
     width: 50px;
     margin-top: 10px;
     height: auto;
