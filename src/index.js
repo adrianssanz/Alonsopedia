@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { ListaCarreras, loader as ListaCarrerasLoader } from './Componentes/ListaCarreras';
+import { ListaCarreras, loader as ListaCarrerasLoader } from './Componentes/ListaCarreras.js';
 import { DetallesEquipo, loader as DetallesEquipoLoader } from './Componentes/DetallesEquipo.js';
 import { ListaChassis, loader as ListaChassisLoader } from './Componentes/ListaChassis.js';
-import DesplegableCarreras from './Componentes/DesplegableCarreras';
+import DesplegableCarreras from './Componentes/DesplegableCarreras.js';
 import DesplegableEquipos from './Componentes/DesplegableEquipos.js';
 import Index from './Pages/Index';
 import Layout from './Pages/Layout';
-import Fernando from './Pages/Fernando.js';
+import Fernando from './Pages/Fernando';
 
 const router = createBrowserRouter([
   
