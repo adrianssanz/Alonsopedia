@@ -1,4 +1,5 @@
 const API_URL = 'https://ergast.com/api/f1'
+const JSON_URL = 'http://localhost:3000'
 
 export async function getAlldata(season) {
     try {
@@ -22,22 +23,24 @@ export async function getAllCarreras() {
     }
 }
 
-export async function getAllEquiposJson() {
-    const respuesta = await fetch('http://localhost:3000/teams')
-    const resultado = await respuesta.json()
-    console.log(resultado)
-    return resultado
-}
-
 export async function getEquipoByIdJson(id) {
-    const respuesta = await fetch(`${'http://localhost:3000/teams'}?id=${id}`)
-    const resultado = await respuesta.json();
-    return resultado
+    try {
+        const respuesta = await fetch(`${JSON_URL}/teams?id=${id}`);
+        const resultado = await respuesta.json();
+        return resultado
+    } catch (error) {
+        console.log("Error al cargar resultados: " + error)
+    }
 }
 
 export async function getChassisJson() {
-    const respuesta = await fetch('http://localhost:3000/chassis')
-    const resultado = await respuesta.json()
-    console.log(resultado)
-    return resultado
+    try {
+        const respuesta = await fetch(`${JSON_URL}/chassis`);
+        const resultado = await respuesta.json()
+        console.log(resultado)
+        return resultado
+    }
+    catch (error) {
+        console.log("Error al cargar resultados: " + error)
+    }
 }
