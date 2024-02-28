@@ -7,7 +7,7 @@ import { DetallesEquipo, loader as DetallesEquipoLoader } from './Componentes/De
 import { ListaChassis, loader as ListaChassisLoader } from './Componentes/ListaChassis.js';
 import DesplegableCarreras from './Componentes/DesplegableCarreras';
 import DesplegableEquipos from './Componentes/DesplegableEquipos.js';
-import Index from './Componentes/Index';
+import Index from './Pages/Index';
 import Layout from './Pages/Layout';
 import Fernando from './Pages/Fernando.js';
 
