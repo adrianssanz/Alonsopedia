@@ -39,7 +39,6 @@ const DesplegableCarreras = () => {
     <div className='selector'>
       <label htmlFor="desplegable">Selecciona una temporada:</label>
       <select id="desplegable" onChange={handleSelect} value={opcionSeleccionada || ''}>
-        {/* Añade las opciones dinámicamente desde el estado 'opciones' */}
         {opciones.map((opcion, index) => (
             <option key={index} value={opcion.valor}>{opcion.valor}</option>
           ))}
