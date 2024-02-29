@@ -1,54 +1,62 @@
 .contenedor-equipo {
-    display: flex;
-    flex-direction: column; /* Cambia a una columna */
-    align-items: center; /* Centra el contenido verticalmente */
-    padding-bottom: 5%;
-    box-sizing: border-box;
-  }
-  
-  .tituloEquipo {
-    color: white;
-    text-shadow: 2px 2px 5px black;
-    margin-bottom: 10px; /* Ajusta el espacio entre el nombre del equipo y el div datos-equipo */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  /* Cambia a una columna */
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  padding-bottom: 5%;
+  box-sizing: border-box;
+}
+
+.tituloEquipo {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 10px;
+}
+
+.datos-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.692);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px black;
+}
+
+.imagen-equipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.imagen-equipo img {
+  max-height: 190px;
+  height: 100%;
+}
+
+.info-equipo {
+  flex: 1 1 300px;
+}
+
+@media (max-width: 600px) {
   .datos-equipo {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5%;
-    background-color:rgba(255, 255, 255, 0.692);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px black;
+    flex-direction: column;
   }
-  
+
   .imagen-equipo {
-    flex: 0 0 auto;
-    margin-right: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  
-  .info-equipo {
-    flex: 1 1 300px;
-  }
-  
-  @media (max-width: 600px) {
-    .datos-equipo {
-      flex-direction: column;
-    }
-  
-    .imagen-equipo {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
+}
 
-  .urlEquipo{
-    color: rgb(73, 143, 255);
-  }
+.urlEquipo {
+  color: rgb(73, 143, 255);
+}
 
-  .urlEquipo:hover{
-    text-decoration: underline;
-    color: blue;
-  }
-  
+.urlEquipo:hover {
+  text-decoration: underline;
+  color: blue;
+}
