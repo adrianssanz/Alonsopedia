@@ -5,13 +5,12 @@ import "../Estilos/DetallesEquipo.css";
 
 export async function loader({ params }) {
   try {
-    const equipo = await getEquipoByIdJson(params.id);
-    //console.log(equipo[0]);
-    //console.log(params.id);
-    return equipo[0];
+      const equipo = await getEquipoByIdJson(params.id);
+      console.log("Equipo encontrado:", equipo); // Debugging
+      return equipo; // No usar [0]
   } catch (error) {
-    console.log("Error obteniendo detalles equipo:" + error);
-    return [];
+      console.log("Error obteniendo detalles equipo:" + error);
+      return null; // Devolver null en caso de error
   }
 }
 
