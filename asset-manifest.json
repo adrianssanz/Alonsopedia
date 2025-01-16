@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/Alonsopedia/static/css/main.2500f476.css",
+    "main.js": "/Alonsopedia/static/js/main.2c04f23c.js",
+    "static/media/video.mp4": "/Alonsopedia/static/media/video.7fb6d0925823a8231ca8.mp4",
+    "static/media/sakhir-circuit-bahrain-gp-f1_111w5ugdzb3sj14yzns6g56u7a.png": "/Alonsopedia/static/media/sakhir-circuit-bahrain-gp-f1_111w5ugdzb3sj14yzns6g56u7a.47e30b6c81f077003062.png",
+    "static/media/alonso.jpg": "/Alonsopedia/static/media/alonso.9fd506058d5904fdd9f4.jpg",
+    "static/media/albert_park.png": "/Alonsopedia/static/media/albert_park.068c7fe886a1bfd4f30e.png",
+    "static/media/bahrain.png": "/Alonsopedia/static/media/bahrain.e7056c74d1996506198c.png",
+    "static/media/spa.png": "/Alonsopedia/static/media/spa.35f12ffeb6b743afaec7.png",
+    "static/media/image-not-found.jpeg": "/Alonsopedia/static/media/image-not-found.84442ce708017824004c.jpeg",
+    "static/media/silverstone.png": "/Alonsopedia/static/media/silverstone.5d42b99150b675e3b16e.png",
+    "static/media/yas_marina.png": "/Alonsopedia/static/media/yas_marina.86ff1bc58913e2af36db.png",
+    "static/media/americas.png": "/Alonsopedia/static/media/americas.9936b7095f91544ea188.png",
+    "static/media/villeneuve.png": "/Alonsopedia/static/media/villeneuve.82c64d0fcc7c40f0dcc3.png",
+    "static/media/suzuka.png": "/Alonsopedia/static/media/suzuka.fb9845c3ad1b0cad1e0c.png",
+    "static/media/interlagos.png": "/Alonsopedia/static/media/interlagos.4e3145974201c26e6f41.png",
+    "static/media/alonso2.jpg": "/Alonsopedia/static/media/alonso2.99a571674da4697bb78d.jpg",
+    "static/media/miami.png": "/Alonsopedia/static/media/miami.0fe29c59f403fc38020f.png",
+    "static/media/baku.png": "/Alonsopedia/static/media/baku.8fedc8344fb918e84263.png",
+    "static/media/red_bull_ring.png": "/Alonsopedia/static/media/red_bull_ring.f26eae6e203ce0ea0a42.png",
+    "static/media/shanghai.png": "/Alonsopedia/static/media/shanghai.36062cce46dcf8bb9a30.png",
+    "static/media/marina_bay.png": "/Alonsopedia/static/media/marina_bay.36da5271f76f7c7c614e.png",
+    "static/media/jeddah.png": "/Alonsopedia/static/media/jeddah.ee3e62ed789c930c3731.png",
+    "static/media/vegas.png": "/Alonsopedia/static/media/vegas.87777a323b2fe1301465.png",
+    "static/media/losail.png": "/Alonsopedia/static/media/losail.ab4db0b384371eae3639.png",
+    "static/media/catalunya.png": "/Alonsopedia/static/media/catalunya.14143f8be5438b77b6e6.png",
+    "static/media/rodriguez.png": "/Alonsopedia/static/media/rodriguez.dffbc68d65d31299698c.png",
+    "static/media/hungaroring.png": "/Alonsopedia/static/media/hungaroring.0828ddba6827da52481c.png",
+    "static/media/monza.png": "/Alonsopedia/static/media/monza.40aa4440238ac958203c.png",
+    "static/media/monaco.png": "/Alonsopedia/static/media/monaco.ad0b35eeef86d332398c.png",
+    "static/media/zandvoort.png": "/Alonsopedia/static/media/zandvoort.1917b158aae3a3b83808.png",
+    "static/media/imola.png": "/Alonsopedia/static/media/imola.c65a6de69f76eec99b74.png",
+    "static/media/logoalonso.png": "/Alonsopedia/static/media/logoalonso.98737d7cc838ce37fff7.png",
+    "index.html": "/Alonsopedia/index.html",
+    "main.2500f476.css.map": "/Alonsopedia/static/css/main.2500f476.css.map",
+    "main.2c04f23c.js.map": "/Alonsopedia/static/js/main.2c04f23c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2500f476.css",
+    "static/js/main.2c04f23c.js"
+  ]
+}
